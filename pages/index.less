@@ -1,0 +1,34 @@
+.title {
+  background: rgb(220, 242, 121);
+}
+
+.container1 {
+  display: flex;
+  flex-direction: row;
+  .column {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding:5px 2px;
+      .item {
+        width: 100%;
+        height: auto;
+      }
+
+
+  }
+
+}
+
+
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px; //列间隙
+  grid-auto-rows: 10px;
+  .item {
+    grid-row-start: auto;
+    width: 100%;
+  }
+
+}
